@@ -5,6 +5,7 @@
 <ol fr-original-style="" style="margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box; font-size: 16px; line-height: 22px;">
 <li fr-original-style="" style="box-sizing: border-box;">Название класса должно указываться в поле для ввода</li>
 <li fr-original-style="" style="box-sizing: border-box;">Рядом с полем должна быть . При нажатии на кнопку «Показать цепочку прототипов» осуществляется проверка наличия класса в window, а также того, является ли свойство функцией-конструктором </li>
+<li fr-original-style="" style="box-sizing: border-box;">Цепочка прототипов выводиться в виде ol-списка, где указано название конструктора или строка [Без названия], если у прототипа нет свойства constructor. В прототипе с помощью вложенного ol-списка выведены все перечислимые (enumerable) свойства прототипа </li>
 <li fr-original-style="" style="box-sizing: border-box;">Реализована возможность не только просматривать стандартные классы, но и загружать модули с помощью динамического импорта (const module = await import('путь до модуля')). Используем то же поле для ввода.</li>
 </ol>
 
