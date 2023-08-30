@@ -9,7 +9,7 @@
 <li fr-original-style="" style="box-sizing: border-box;">Реализована возможность не только просматривать стандартные классы, но и загружать модули с помощью динамического импорта (const module = await import('путь до модуля')). Используем то же поле для ввода.</li>
 </ol>
 
-Прмер названия класса: HTMLInputElement
+Пример названия класса для ввода и проверки инстумента: HTMLInputElement
 
 ## Технологии
 ![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
