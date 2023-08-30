@@ -3,9 +3,6 @@ const showChainButton = document.getElementById('showChainButton');
 const outputDiv = document.getElementById('output');
 console.log(showChainButton);
 showChainButton.addEventListener('click', showPrototypeChain);
-
-
-
 async function showPrototypeChain() {
   const className = classNameInput.value.trim();
 
@@ -34,16 +31,13 @@ async function showPrototypeChain() {
       chain.push(currentClass);
       currentClass = Object.getPrototypeOf(currentClass.prototype).constructor;
     }
-
     chain.push(Object);
-
     displayPrototypeChain(chain);
   } else {
     classNameInput.classList.add('error');
     outputDiv.innerHTML = '';
   }
 }
-
 function displayPrototypeChain(chain) {
   const ol = document.createElement('ol');
 
@@ -57,11 +51,8 @@ function displayPrototypeChain(chain) {
     listPrototypeProperties(cls.prototype, propertiesOl);
     li.appendChild(titleProto);
     li.appendChild(propertiesOl);
-
-
     ol.appendChild(li);
   });
-
   outputDiv.innerHTML = '';
   outputDiv.appendChild(ol);
 }
@@ -73,11 +64,9 @@ function listPrototypeProperties(proto, ol) {
     const propSpan = document.createElement('span');
     const propType = document.createElement('span');
     const errorType = document.createElement('span');
-
     propSpan.classList.add('prop-name');
     propType.classList.add('prop-type');
     errorType.classList.add('error-type');
-
     propSpan.textContent = `Свойство прототипа:${prop}`
     li.appendChild(propSpan);
     ol.appendChild(li);
