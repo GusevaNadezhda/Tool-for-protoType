@@ -1,7 +1,6 @@
 const classNameInput = document.getElementById('classNameInput');
 const showChainButton = document.getElementById('showChainButton');
 const outputDiv = document.getElementById('output');
-console.log(showChainButton);
 showChainButton.addEventListener('click', showPrototypeChain);
 async function showPrototypeChain() {
   const className = classNameInput.value.trim();
