@@ -1,0 +1,59 @@
+/* шрифты
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:wght@400;700&display=swap'); */
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+padding-top: 30px; 
+}
+
+
+.col-auto {
+  width: 50%;
+}
+
+.error {
+  border: 1px solid #dc3545;
+}
+
+.row{
+  justify-content: space-between;
+}
+::marker {
+  color: #0d6efd;
+}
+
+.title-prototype {
+ color: #0d6efd;
+}
+
+.prop-name{
+  color: #20c997;
+}
+
+.prop-type{
+  color: #6610f2;
+}
+
+.error-type{
+  color: #dc3545;
+}
